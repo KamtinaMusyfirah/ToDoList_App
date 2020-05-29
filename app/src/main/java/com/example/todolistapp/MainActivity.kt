@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         var adapter = ArrayAdapter<String>(this,
             android.R.layout.simple_list_item_multiple_choice, itemlist)
 
+
         add.setOnClickListener {
             itemlist.add(editText.text.toString())
             listView.adapter = adapter
